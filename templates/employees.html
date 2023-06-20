@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICE PRACTICE</title>
+</head>
+<body>
+    <table>
+        <tr>
+             <th>ID</th>
+             <th>First name</th>
+             <th>Last name</th>
+             <th>email</th>
+             <th>phone</th>
+        </tr>
+        {% for employees in employees %}
+        <tr>
+ <td>{{employees[0]}}</td>
+ <td>{{employees[1]}}</td>
+ <td>{{employees[2]}}</td>
+ <td>{{employees[3]}}</td>
+ <td>{{employees[4]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
